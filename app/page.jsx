@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Button } from "@/components/ui/button";
@@ -7,6 +9,11 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
 const Home = () => {
+  const handleDownloadCV = () => {
+    const cvUrl = "/assets/cv.pdf";
+    window.open(cvUrl, "_blank");
+  };
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -18,12 +25,16 @@ const Home = () => {
             <h1 className="h1 mb-6">
               Hello I'm <br /> <span className="text-accent">Pushpender Kushwaha</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">hdfsdh jhdfjshg jhgfjsgfjshgfjhsdgfjghsf jhgfhsfjs gfjhgfjhsgf</p>
+            <p className="max-w-[500px] mb-9 text-white/80">
+              Experienced Web Developer skilled in advanced web development, testing, and debugging with a strong foundation in React.js, React Native, and Node.js. Proven ability to deliver
+              high-quality solutions through seamless API integration, performance optimization, and adherence to best coding practices. Collaborative team player with a passion for continuous
+              learning and staying up-to-date with emerging technologies.
+            </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               {/* btn and socials */}
-              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2" onClick={handleDownloadCV}>
                 <span>Download CV</span>
-                <FiDownload className="text-xl " />
+                <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social
