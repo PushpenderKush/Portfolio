@@ -10,31 +10,31 @@ const lists = [
     num: "01",
     title: "Full-Stack Development",
     description: "Utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js) for building dynamic and robust web applications",
-    href: "",
+    href: "/contact",
   },
   {
     num: "02",
     title: "Front-End Development",
     description: "Specializing in React.js for creating interactive user interfaces using Redux, React Hooks, and React Router",
-    href: "",
+    href: "/contact",
   },
   {
     num: "03",
     title: "Back-End Development",
     description: "Proficient in Node.js and Express.js for developing server-side logic and RESTful APIs.",
-    href: "",
+    href: "/contact",
   },
   {
     num: "04",
     title: "React Native Development",
     description: "Building cross-platform mobile applications for both iOS and Android using React Native.",
-    href: "",
+    href: "/contact",
   },
 ];
 
 const Services = () => {
   return (
-    <section className="min-h-[80h] flex flex-col justify-center py-12 xl:py-0">
+    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
